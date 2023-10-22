@@ -27,11 +27,11 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 
     // Create a message caption with video information
     const captvid = `✼ ••๑⋯ ❀ Y O U T U B E ❀ ⋯⋅๑•• ✼
-  ❏ Title: ${title}
-  ❐ Duration: ${duration}
-  ❑ Views: ${views}
-  ❒ Upload: ${uploaded}
-  ❒ Link: ${url}
+  🎐 Title: ${title}
+  🎐 Duration: ${duration}
+  🎐 Views: ${views}
+  🎐 Upload: ${uploaded}
+  🎐 Link: ${url}
 ⊱─━━━━⊱༻●༺⊰━━━━─⊰`;
 
     // Send the video information along with the thumbnail to the Discord channel
