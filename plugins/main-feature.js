@@ -4,12 +4,11 @@ import fetch from 'node-fetch'
 import moment from 'moment-timezone'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
 let name = await conn.getName(who)
 let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length
-let txt = `*⛧  𝟗𝑖𝑛𝑒 𝑥𝟑 -  𝐹𝑒𝑎𝑡𝑢𝑟𝑒𝑠*\n\n`
+let txt = `*⛧  𝟗𝑖𝑛𝑒 𝑥𝟑 -  𝐹𝑒𝑎𝑡𝑢𝑟𝑒𝑠  ⛧*\n\n`
       txt += `	◦  *𝑇𝑜𝑡𝑎𝑙* : ${totalf}\n`
       txt += author
    await conn.relayMessage(m.chat,  {
