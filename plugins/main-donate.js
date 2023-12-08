@@ -10,7 +10,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
     
 To help us keep improving, consider following us on Instagram. Every new follower brings us joy and motivation! 
 
-Our Instagram: @asli_guru_2k23
+Our Instagram: @false_eye
 
 Remember, even the smallest support can make a huge difference!
 
