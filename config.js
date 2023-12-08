@@ -51,8 +51,8 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.botname = '𝟗𝑖𝑛𝑒 𝑥𝟑'
 global.premium = 'true'
-global.packname = '𝑆𝑡𝑟𝑎𝑖𝑔ℎ𝑡 𝑂𝑢𝑡𝑡𝑎 𝐻𝑒𝑙𝑙' 
-global.author = ' 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)' 
+global.packname = 'Straight outta hell!' 
+global.author = 'false eye :)' 
 global.menuvid = 'https://telegra.ph/file/ca015bad793bcde1cd232.mp4'
 global.igfg = '𒈞 Follow on Instagram\nhttps://www.instagram.com/false_eye\n' 
 global.dygp = 'https://t.me/sarca_stics'
