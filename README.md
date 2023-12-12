@@ -28,7 +28,12 @@ GURU-BOT- Simple Multi Device whatsapp bot.
 
 
 
-2. Get Session ID (Pairing Code)
+2. Get Session ID (Server 1)
+    <br>
+<a href='https://session.guruapi.tech' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+
+
+3. Get Session ID (Server 2) (use this if server 1 Doesn't work)
     <br>
 <a href='https://replit.com/@Gurucharan-saho/GURU-BOT-PAIR?v=1' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
@@ -46,7 +51,7 @@ GURU-BOT- Simple Multi Device whatsapp bot.
 
 3. Now Deploy
     <br>
-<p align="center"><a href="https://www.guruapi.tech"> <img src="https://img.shields.io/badge/Heroku%20Deploy-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://web-guru-bot.vercel.app"> <img src="https://img.shields.io/badge/Heroku%20Deploy-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 #### DEPLOY TO RAILWAY
 
@@ -130,6 +135,7 @@ SUPPORT GROUP: <a href="https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp"><img a
    
 ## 
 - Not For Sale
+- If A plugin's code is obfuscated , You don't have permission to edit it in any form 
 - Don't Forget to Give Credits If you are using or Reuploading My Plugins/files
 - Have A Good Day Ahead
 
