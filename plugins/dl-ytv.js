@@ -9,9 +9,8 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
   if (!args || !args[0]) throw `✳️ Example:\n${usedPrefix + command} https://youtu.be/YzkTFFwxtXI`;
   if (!args[0].match(/youtu/gi)) throw `❎ Verify that the YouTube link`;
   
-  var gapi = `${gurubot}/v1/ytmp4?url=${encodeURIComponent(args)}`
 
-  var ggapi = `${gurubot}/ytplay?url=${encodeURIComponent(args)}`
+  var ggapi = `https://vihangayt.me/download/ytmp4?url=${encodeURIComponent(args)}`
 
   const response = await fetch(ggapi);
   if (!response.ok) {
@@ -20,19 +19,14 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
   }
   const data = await response.json();
 
-  const caption = `✼ ••๑⋯❀ Y O U T U B E ❀⋯⋅๑•• ✼
+  const caption = `𒉭 Y O U T U B E 𒉭
 	  
-  ❏ Title: ${data.result.title}
-  ❏ Channel: ${data.result.channel}
-  ❐ Duration: ${data.result.seconds} seconds
-  ❑ Views: ${data.result.view}
-  ❒ Upload: ${data.result.publicDate}
-  ❒ Link: ${args[0]}
-  
+  ⛧ Title: ${data.data.title}
+  ⛧ Link: ${args[0]}
   ⊱─━⊱༻●༺⊰━─⊰`
+ let vres = data.data.vid_360p
 
-
-  let vid = await fetch(gapi)
+  let vid = await fetch(vres)
   const vidBuffer = await vid.buffer();
 
   conn.sendFile(
