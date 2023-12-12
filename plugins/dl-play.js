@@ -17,8 +17,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     const query = encodeURIComponent(text);
 
     // Make a GET request to the API
-    const response = await axios.get(`${gurubot}/ytsearch?text=${query}`);
-    const result = response.data.results[0]; // Get the first result
+    const response = await axios.get(`https://api-brunosobrino.zipponodes.xyz/api/ytsearch?text=${query}`);
+    const result = response.data.resultado[0]; // Get the first result
 
     if (!result) throw 'Video Not Found, Try Another Title';
 
@@ -26,13 +26,13 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     const { title, thumbnail, duration, views, uploaded, url } = result;
 
     // Create a message caption with video information
-    const captvid = `✼ ••๑⋯ ❀ Y O U T U B E ❀ ⋯⋅๑•• ✼
-  🎐 Title: ${title}
-  🎐 Duration: ${duration}
-  🎐 Views: ${views}
-  🎐 Upload: ${uploaded}
-  🎐 Link: ${url}
-⊱─━━━━⊱༻●༺⊰━━━━─⊰`;
+    const captvid = `𒉭 Y O U T U B E 𒉭 
+  ⛧ Title: ${title}
+  ⛧ Duration: ${duration}
+  ⛧ Views: ${views}
+  ⛧ Upload: ${uploaded}
+  ⛧ Link: ${url}
+⊱─━━━━⊱༻°༺⊰━━━━─⊰`;
 
     // Send the video information along with the thumbnail to the Discord channel
     conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: captvid, footer: author }, { quoted: m });
