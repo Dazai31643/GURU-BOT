@@ -1,49 +1,37 @@
-import fetch from "node-fetch";
+import fetch from 'node-fetch';
 
-let handler = async (m, { conn, isOwner, usedPrefix, command, args }) => {
-    let query = "Oops! I need an input text. Try something like this:\n.midjourney man kissing";
-    let text;
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  if (!text) throw `*This command generates images from text prompts*\n\n*𝙴xample usage*\n*◉ ${usedPrefix + command} Beautiful anime girl*\n*◉ ${usedPrefix + command} Elon Musk in pink output*`;
+
+  try {
+    let imsg = conn.sendMessage(m.chat, {text: 'please wait , while i do some magic'}, { quoted: m });
+
+    const endpoint = `https://vihangayt.me/tools/lexicaart?q=${encodeURIComponent(text)}`;
+    const response = await fetch(endpoint);
+    const dataa = await response.json();
+
+    let data = dataa.data;
+    let randomDataIndex = Math.floor(Math.random() * data.length);
+    let randomData = data[randomDataIndex];
+    let images = randomData.images;
+    let randomImageIndex = Math.floor(Math.random() * images.length);
+    let img = images[randomImageIndex].url;
     
-    if (args.length >= 1) {
-        text = args.slice(0).join(" ");
-        m.reply(`Let's see what image I can dream up from "${text}"...`);
-    } else if (m.quoted && m.quoted.text) {
-        text = m.quoted.text;
-        m.reply(`Aha! Using your quoted text, "${text}", let's generate an image...`);
-    } else throw query;
     
-    try {
-        m.reply("Brewing up some AI magic... 🧙‍♂️");
-        const imgURLs = await Draw(text);
-        if (imgURLs.length > 0) {
-            const randomIndex = Math.floor(Math.random() * imgURLs.length);
-            const randomImgURL = imgURLs[randomIndex];
-            conn.sendFile(m.chat, randomImgURL, text, `*[Ta-da! Here's your result:]*\n"${text}"`, m);
-        } else {
-            throw 'No images found in the API response.';
-        }
-    } catch (e) {
-        throw 'Oh snap! Something went wrong while generating the image. 🥺';
+    if (response.ok) {
+      
+      await conn.sendFile(m.chat, img, 'image.png', null, fcon);
+
+
+    } else {
+      throw '*Image generation failed*';
     }
-}
+  } catch {
+    throw '*Oops! Something went wrong while generating images. Please try again later.*';
+  }
+};
 
-handler.help = ["imagine"];
-handler.tags = ["AI"];
-handler.command = /^imagine$/i;
-
+handler.help = ['dalle'];
+handler.tags = ['AI'];
+handler.command = ['imagine'];
 export default handler;
-
-async function Draw(prompt) {
-    try {
-        const response = await fetch(`https://v2-guru-indratensei.cloud.okteto.net/scrape?query=${encodeURIComponent(prompt)}`);
-        const responseData = await response.json();
-        
-        if (responseData.image_links && responseData.image_links.length > 0) {
-            return responseData.image_links;
-        } else {
-            throw 'No image links found in the API response.';
-        }
-    } catch (error) {
-        throw 'Failed to fetch image links from the API.';
-    }
-}
