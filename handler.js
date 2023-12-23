@@ -546,8 +546,8 @@ export async function participantsUpdate({
                   ppgp = await this.profilePictureUrl(id, 'image');
                 } catch (error) {
                   console.error(`Error retrieving profile picture: ${error}`);
-                  pp = 'https://telegra.ph/file/ac78d658c9254d5d3bde3.jpg'; // Assign default image URL
-                  ppgp = 'https://telegra.ph/file/b16095fbe064dc8b91147.jpg'; // Assign default image URL
+                  pp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
+                  ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
                 } finally {
                   let text = (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user')
                     .replace('@group', await this.getName(id))
@@ -557,14 +557,14 @@ export async function participantsUpdate({
                   let nthMember = groupMetadata.participants.length;
                   let secondText = `Welcome, ${await this.getName(user)}, our ${nthMember}th member`;
           
-                  let welcomeApiUrl = `https://wecomeapi.onrender.com/welcome-image?username=${encodeURIComponent(
+                  let welcomeApiUrl = `https://welcome.guruapi.tech/welcome-image?username=${encodeURIComponent(
                     await this.getName(user)
                   )}&guildName=${encodeURIComponent(await this.getName(id))}&guildIcon=${encodeURIComponent(
                     ppgp
                   )}&memberCount=${encodeURIComponent(
                     nthMember.toString()
                   )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-                    'https://telegra.ph/file/252dad310b003431a1765.jpg'
+                    'https://cdn.wallpapersafari.com/71/19/7ZfcpT.png'
                   )}`;
           
                   try {
@@ -576,10 +576,10 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "𝑊𝑒𝑙𝑐𝑜𝑚𝑒 𝑇𝑜 𝐺𝑟𝑜𝑢𝑝,𝑅𝑒𝑎𝑑 𝑅𝑢𝑙𝑒𝑠 𝐴𝑛𝑑 𝐸𝑛𝑗𝑜𝑦",
-                        body: "𝟗𝑖𝑛𝑒 𝑥𝟑 × 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)",
+                        title: "ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ",
+                        body: "welcome to Group",
                         thumbnailUrl: welcomeApiUrl,
-                        sourceUrl: 'https://t.me/sarca_stics',
+                        sourceUrl: 'https://chat.whatsapp.com/BFfD1C0mTDDDfVdKPkxRAA',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
@@ -601,8 +601,8 @@ export async function participantsUpdate({
                   ppgp = await this.profilePictureUrl(id, 'image');
                 } catch (error) {
                   console.error(`Error retrieving profile picture: ${error}`);
-                  pp = 'https://telegra.ph/file/ac78d658c9254d5d3bde3.jpg'; // Assign default image URL
-                  ppgp = 'https://telegra.ph/file/b16095fbe064dc8b91147.jpg'; // Assign default image URL
+                  pp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
+                  ppgp = 'https://i.imgur.com/8B4jwGq.jpeg'; // Assign default image URL
                 } finally {
                   let text = (chat.sBye || this.bye || conn.bye || 'HELLO, @user')
                     .replace('@user', '@' + user.split('@')[0]);
@@ -610,14 +610,14 @@ export async function participantsUpdate({
                   let nthMember = groupMetadata.participants.length;
                   let secondText = `Goodbye, our ${nthMember}th group member`;
           
-                  let leaveApiUrl = `https://wecomeapi.onrender.com/leave-image?username=${encodeURIComponent(
+                  let leaveApiUrl = `https://welcome.guruapi.tech/leave-image?username=${encodeURIComponent(
                     await this.getName(user)
                   )}&guildName=${encodeURIComponent(await this.getName(id))}&guildIcon=${encodeURIComponent(
                     ppgp
                   )}&memberCount=${encodeURIComponent(
                     nthMember.toString()
                   )}&avatar=${encodeURIComponent(pp)}&background=${encodeURIComponent(
-                    'https://telegra.ph/file/9ae9163503ed0d6b0e01e.jpg'
+                    'https://cdn.wallpapersafari.com/71/19/7ZfcpT.png'
                   )}`;
           
                   try {
@@ -629,10 +629,10 @@ export async function participantsUpdate({
                         contextInfo: {
                         mentionedJid: [user],
                         externalAdReply: {
-                        title: "𝐺𝑜𝑜𝑑𝑏𝑦𝑒",
-                        body: "𝟗𝑖𝑛𝑒 𝑥𝟑 × 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)",
+                        title: "ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ",
+                        body: "Goodbye from  Group",
                         thumbnailUrl: leaveApiUrl,
-                        sourceUrl: 'https://t.me/sarca_stics',
+                        sourceUrl: 'https://chat.whatsapp.com/BFfD1C0mTDDDfVdKPkxRAA',
                         mediaType: 1,
                         renderLargerThumbnail: true
                         }}})
