@@ -7,15 +7,16 @@ import axios from 'axios'
 
 
 global.owner = [
-  ['919539901834', ' 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)', true],
-  ['918590717599', '𝟗𝑖𝑛𝑒 𝑥𝟑', true], 
+  ['919539901834', 'false eye :)', true],
+  ['918590717599', '9ine x3', true], 
+  [''] 
 ] //Number of owners
 
 //global.pairingNumber = "" //put your bot number here
 
-global.mods = ['919539901834','923114803966','918590717599'] 
-global.prems = ['919539901834', '923114803966', '918590717599']
-global.allowed = ['917605902011', '32460248586', '19152999993']
+global.mods = ['919539901834'] 
+global.prems = ['919539901834']
+global.allowed = ['919539901834']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
@@ -51,10 +52,10 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.botname = '𝟗𝑖𝑛𝑒 𝑥𝟑'
 global.premium = 'true'
-global.packname = 'Straight outta hell' 
+global.packname = 'straight outta hell' 
 global.author = 'false eye :)' 
 global.menuvid = 'https://telegra.ph/file/e00d142e4443cc112f9b4.mp4'
-global.igfg = '𒈞 Follow on Instagram\nhttps://www.instagram.com/false_eye\n' 
+global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/false_eye\n' 
 global.dygp = 'https://t.me/sarca_stics'
 global.fgsc = 'https://github.com/false-eye' 
 global.fgyt = 'https://t.me/false_eye'
@@ -71,7 +72,7 @@ global.error = '❌'
 global.xmoji = '🔥' 
 
 global.multiplier = 69 
-global.maxwarn = '3' // máxima advertencias
+global.maxwarn = '3' 
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
