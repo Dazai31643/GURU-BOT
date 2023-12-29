@@ -13,7 +13,7 @@ import {
 
   
    let groupmenu = `
-   ✦ ───『 *group* 』─── ✦
+   ✦ ───『 *group* 』─── ⚝
   ◈ .getbio <@tag/reply>  Ⓛ
   ◈ .animequote
   ◈ .Setdesc <text>
@@ -44,7 +44,7 @@ import {
   ╰──────────⳹`
   
   let ownermenu = `
-  ✦ ───『 *owner* 』─── ✦
+  ✦ ───『 *owner* 』─── ⚝
   ◈ .addprem <@tag>
   ◈ .addowner @user
   ◈ .allow <@tag>
@@ -76,7 +76,7 @@ import {
   ╰──────────⳹`
   
   let funmenu = `
-  ✦ ───『 *fun* 』─── ✦
+  ✦ ───『 *fun* 』─── ⚝
   ◈ .afk <reason>
   ◈ .tomp3
   ◈ .toav
@@ -98,7 +98,7 @@ import {
   ╰──────────⳹`
   
   let reactmenu = `
-  ✦ ───『 *reaction* 』─── ✦
+  ✦ ───『 *reaction* 』─── ⚝
   ◈ .bully @tag
   ◈ .cuddle @tag
   ◈ .cry @tag
@@ -128,7 +128,7 @@ import {
   ╰──────────⳹`
   
   let dlmenu = `
-  ✦ ───『 *downloader* 』─── ✦
+  ✦ ───『 *downloader* 』─── ⚝
   ◈ .facebook <url>
   ◈ .gdrive 🅟
   ◈ .gitclone <url>
@@ -151,7 +151,7 @@ import {
   ╰──────────⳹`
   
   let gamemenu = `
-  ✦ ───『 *game* 』─── ✦
+  ✦ ───『 *game* 』─── ⚝
   ◈ .slot <amount>
   ◈ .chess [from to]
   ◈ .chess delete
@@ -164,7 +164,7 @@ import {
   ◈ .tictactoe <tag number>
   ╰──────────⳹`
   let logomenu = `
-  ✦ ───『 *maker* 』─── ✦
+  ✦ ───『 *maker* 』─── ⚝
   ◈ .blur
   ◈ .difuminar2
   ◈ .hornycard
@@ -191,7 +191,7 @@ import {
   ╰──────────⳹`
   
   let stickermenu = `
-  ✦ ───『 *sticker* 』─── ✦
+  ✦ ───『 *sticker* 』─── ⚝
   ◈ .emojimix <emoji+emoji>
   ◈ .getsticker
   ◈ .smaker
@@ -214,7 +214,7 @@ import {
   ╰──────────⳹`
   
   let audiomenu = `
-  ✦ ───『 *audio* 』─── ✦
+  ✦ ───『 *audio* 』─── ⚝
   ◈ .bass [vn]
   ◈ .blown [vn]
   ◈ .deep [vn]
@@ -231,14 +231,14 @@ import {
   
   
   let newsmenu = `
-  ✦ ───『 *news* 』─── ✦
+  ✦ ───『 *news* 』─── ⚝
   ◈ .news
   ◈ .technews
   ◈ .ndtv
   ╰──────────⳹
   `
   let economy = `
-  ✦ ───『 *economy* 』─── ✦
+  ✦ ───『 *economy* 』─── ⚝
   ◈ .addgold <@user>
   ◈ .addxp <@user>
   ◈ .bank
@@ -259,7 +259,7 @@ import {
   ◈ .work
   ╰──────────⳹`
   let animemenu = `
-  ✦ ───『 *anime* 』─── ✦
+  ✦ ───『 *anime* 』─── ⚝
   ◈ .anime
   ◈ .akira
   ◈ .akiyama
@@ -305,7 +305,7 @@ import {
   ╰──────────⳹
   `
   let nsfwmenu = `
-  ✦ ───『 *nsfw* 』─── ✦
+  ✦ ───『 *nsfw* 』─── ⚝
   ◈ .genshin
   ◈ .swimsuit
   ◈ .schoolswimsuit
@@ -389,7 +389,7 @@ import {
   ╰──────────⳹`
   
   let toolsmenu = `
-  ✦ ───『 *tools* 』─── ✦
+  ✦ ───『 *tools* 』─── ⚝
   ◈ .nowa
   ◈ .qr <text>
   ◈ .qrcode <text>
@@ -429,7 +429,7 @@ import {
   ╰──────────⳹`
   
   let Aimenu = `
-  ✦ ───『 *AI* 』─── ✦
+  ✦ ───『 *AI* 』─── ⚝
   ◈ .bing
   ◈ .dalle
   ◈ .chatgpt
@@ -439,16 +439,18 @@ import {
   ◈ .ai
   ◈ .bard
   ◈ .alexa
+  ◈ .bingimg
+  ◈ .gemini
   ╰──────────⳹
   `
   let religionmenu = `
-  ✦ ───『 *religion* 』─── ✦
+  ✦ ───『 *religion* 』─── ⚝
   ◈ .gita [verse_number]
   ◈ .quran [surah_number|surah_name]
   ╰──────────⳹`
   
   let botmenu = `
-  ✦ ───『 *Bot Menu* 』─── ✦
+  ✦ ───『 *Bot Menu* 』─── ⚝
   ◈ .ping
   ◈ .runtime
   ◈ .script
@@ -471,7 +473,7 @@ import {
   ╰──────────⳹
   `
   let pluginmenu = `
-  ✦ ───『 *plugin* 』─── ✦
+  ✦ ───『 *plugin* 』─── ⚝
   ◈ .plugins
   ◈ .install <Gist URL>
   ╰──────────⳹
@@ -603,7 +605,7 @@ import {
           delete: key
       });
       delete conn.gurumenu[m.sender];
-  }, 60 * 1000),
+  }, 150 * 1000),
   };
   };
   
@@ -616,75 +618,75 @@ import {
     const choice = m.text.trim();
     
     if (choice === "1") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: botmenu
       }, { quoted:fcontact });
       } else if (choice === "2") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: ownermenu
       }, { quoted:fcontact });
       } else if (choice === "3") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: groupmenu
       }, { quoted:fcontact });
       } else if (choice === "4") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: funmenu
       }, { quoted:fcontact });
       } else if (choice === "5") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: reactmenu
       }, { quoted:fcontact });
       } else if (choice === "6") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: dlmenu
       }, { quoted:fcontact });
       } else if (choice === "7") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: groupmenu
       }, { quoted:fcontact });
       } else if (choice === "8") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: logomenu
       }, { quoted:fcontact });
       } else if (choice === "9") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: stickermenu
       }, { quoted:fcontact });
       } else if (choice === "10") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: audiomenu
       }, { quoted:fcontact });
       } else if (choice === "11") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: newsmenu
       }, { quoted:fcontact });
       } else if (choice === "12") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: economy
       }, { quoted:fcontact });
       } else if (choice === "13") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: animemenu
       }, { quoted:fcontact });
       } else if (choice === "14") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: nsfwmenu
       }, { quoted:fcontact });
       } else if (choice === "15") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: toolsmenu
       }, { quoted:fcontact });
       } else if (choice === "16") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: Aimenu
       }, { quoted:fcontact });
       } else if (choice === "17") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: religionmenu
       }, { quoted:fcontact });
       } else if (choice === "18") {
-        await conn.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5bb79d04ef3edb61800b5.jpg' },
+        await conn.sendMessage(m.chat, { image: { url: 'https://cdn.jsdelivr.net/gh/Guru322/api@Guru/K.jpg' },
         caption: pluginmenu
       }, { quoted:fcontact });
       } else {
