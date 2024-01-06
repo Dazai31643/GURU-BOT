@@ -52,8 +52,8 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.botname = '𝟗𝑖𝑛𝑒 𝑥𝟑'
 global.premium = 'true'
-global.packname = 'straight outta hell' 
-global.author = 'false eye :)' 
+global.packname = '9ine x3' 
+global.author = '@false_eye' 
 global.menuvid = 'https://telegra.ph/file/e00d142e4443cc112f9b4.mp4'
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/false_eye\n' 
 global.dygp = 'https://t.me/sarca_stics'
@@ -64,7 +64,7 @@ global.fglog = 'https://telegra.ph/file/34aea4418dfc678fc96b6.jpg'
 global.thumb = fs.readFileSync('./Assets/Gurulogo.jpg')
 
 
-global.wait = '*⌛ _Charging..._*\n*▰▰▰▱▱▱▱▱*'
+global.wait = '*⌛ _loading..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
@@ -72,7 +72,7 @@ global.error = '❌'
 global.xmoji = '🔥' 
 
 global.multiplier = 69 
-global.maxwarn = '3' 
+global.maxwarn = '5' 
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
