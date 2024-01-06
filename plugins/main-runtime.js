@@ -20,7 +20,7 @@ await displayLoadingScreen(conn, m.chat)
       mentionedJid: [m.sender],
       isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363144038483540@newsletter',
+                newsletterJid: '120363178281296360@newsletter',
                 newsletterName: global.author,
                 serverMessageId: -1
             },
@@ -29,7 +29,7 @@ await displayLoadingScreen(conn, m.chat)
       title: "𝟗𝑖𝑛𝑒 𝑥𝟑",
       body: "R U N T I M E",
       thumbnailUrl: pp,
-      sourceUrl: 'https://www.instagram.com/false_eye',
+      sourceUrl: 'https://guruapi.tech',
       mediaType: 1,
       renderLargerThumbnail: false
       }}})
@@ -45,4 +45,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [d, 'd ', h, 'h ', m, 'm ', s, 's '].map(v => v.toString().padStart(2, 0)).join('')
-}
+	      }
