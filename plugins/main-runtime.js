@@ -29,7 +29,7 @@ await displayLoadingScreen(conn, m.chat)
       title: "𝟗𝑖𝑛𝑒 𝑥𝟑",
       body: "R U N T I M E",
       thumbnailUrl: pp,
-      sourceUrl: 'https://guruapi.tech',
+      sourceUrl: 'https://t.me/sarca_stics',
       mediaType: 1,
       renderLargerThumbnail: false
       }}})
