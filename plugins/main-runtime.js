@@ -31,7 +31,7 @@ await displayLoadingScreen(conn, m.chat)
       thumbnailUrl: pp,
       sourceUrl: 'https://t.me/sarca_stics',
       mediaType: 1,
-      renderLargerThumbnail: false
+      renderLargerThumbnail: true
       }}})
 }
 handler.help = ['runtime']
