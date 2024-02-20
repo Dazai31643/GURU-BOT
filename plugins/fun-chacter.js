@@ -35,6 +35,18 @@ let handler = async (m, { conn, command, text, usedPrefix, participants }) => {
       "Autistic",
       "Epstein Underdog",
       "Stephen Hawkings From Epstein",
+      "Slut",
+      "Prostitute",
+      "Bollocks",
+      "Hairynigga",
+      "Cum Lover",
+      "Brainwashed Northy",
+      "Bisexual",
+      "Transgender",
+      "Shameless",
+      "Pathetic",
+      "Got no hoes",
+      "Simper",
     ]
     const userCharacterSeletion =
       userChar[Math.floor(Math.random() * userChar.length)]
