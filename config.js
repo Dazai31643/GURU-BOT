@@ -50,9 +50,9 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = '𝟗𝑖𝑛𝑒 𝑥𝟑'
+global.botname = '9ine.x3'
 global.premium = 'true'
-global.packname = '9ine x3' 
+global.packname = '9ine.x3' 
 global.author = '@false_eye' 
 global.menuvid = 'https://telegra.ph/file/e00d142e4443cc112f9b4.mp4'
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/false_eye\n' 
