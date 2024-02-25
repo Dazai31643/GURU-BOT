@@ -1,21 +1,21 @@
 let handler = async m => m.reply(`
 
-𒊮  *𝟗𝑖𝑛𝑒 𝑥𝟑  ×  𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒*  𒊮
+⛧  *9ine.x3 by false eye*  ⛧
 
 ─────────────
-𒈞 Dumping Channel 
+⸸ Dumping Channel 
 https://t.me/sarca_stics
 
-𒈞 Owner Telegram
+⸸ Owner Telegram
 https://t.me/false_eye
 
-𒈞 Owner Instagram
+⸸ Owner Instagram
 https://instagram.com/false_eye
 
-𒈞 Owner Github
+⸸ Owner Github
 https://github.com/false-eye
 
-⛧⸸       ₆⁶₆       ⸸⛧
+       ₆⁶₆       
 
 
 `.trim())
