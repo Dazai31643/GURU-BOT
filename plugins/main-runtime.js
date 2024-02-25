@@ -1,7 +1,7 @@
 import displayLoadingScreen from '../lib/loading.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-let pp = 'https://i.imgur.com/n9clw56.jpg'
+let pp = 'https://i.imgur.com/LyUFu5Q.jpeg'
 await displayLoadingScreen(conn, m.chat)
 	let _muptime
     if (process.send) {
@@ -12,7 +12,7 @@ await displayLoadingScreen(conn, m.chat)
       }) * 1000
     }
     let muptime = clockString(_muptime)
-    let str = `あR U N T I M Eあ \n\n${muptime}`
+    let str = `⛧ 9ine.x3 Runtime ⛧ \n\n${muptime}`
     conn.sendMessage(m.chat, {
       text: str,
       contextInfo: {
@@ -26,7 +26,7 @@ await displayLoadingScreen(conn, m.chat)
             },
       forwardingScore: 999,
       externalAdReply: {
-      title: "𝟗𝑖𝑛𝑒 𝑥𝟑",
+      title: "9ine.x3",
       body: "R U N T I M E",
       thumbnailUrl: pp,
       sourceUrl: 'https://t.me/sarca_stics',
