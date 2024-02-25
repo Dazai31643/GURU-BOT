@@ -55,13 +55,14 @@ let infobt = `
 ▢ *${chats.length - groupsIn.length}* private chats
 ▢ *${chats.length}* Total Chats
 
-*𒊮 OWNER*
-  * 𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒 :)*
-𒈞 Instagram :
+*OWNER*
+  *𝑓𝑎𝑙𝑠𝑒 𝑒𝑦𝑒*
+𒈞
+⛧ Instagram :
   • https://instagram.com/false_eye
-𒈞 GitHub :
+⛧ GitHub :
   • https://github.com/false-eye
-𒈞 Telegram : 
+⛧ Telegram : 
   • t.me/false_eye
 
  *≡ S E R V E R*
