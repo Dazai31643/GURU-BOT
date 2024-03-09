@@ -24,7 +24,7 @@ let handler = async (m, { conn, text }) => {
           mentionedJid: [m.sender],
           externalAdReply: {
             title: "↺ |◁   II   ▷|   ♡",
-            body: `Now playing: ${text}`,
+            body: `playing: ${text}`,
             thumbnailUrl: pp,
             sourceUrl: null,
             mediaType: 1,
