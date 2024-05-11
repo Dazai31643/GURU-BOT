@@ -1,57 +1,27 @@
-letlet handler = async (m, { conn, args, usedPrefix, command }) => {
-    conn.relayMessage(m.chat, {
-      viewOnceMessage: {
-        message: {
-          interactiveMessage: {
-            header: {
-              title: '*🎗️ قـائـمـة الـاوامــر🎗️*'
-            },
-            body: {
-              text: '🧿 افتح القائمة بواسطة الزر\n🍒 لا تلعب كثير في القائمة'
-            },
-            nativeFlowMessage: {
-              buttons: [
-                {
-                  name: 'single_select',
-                  buttonParamsJson: JSON.stringify({
-                    title: 'دوس عليا 💔',
-                    sections: [
-                      {
-                        title: 'List',
-                        highlight_label: 'ON',
-                        rows: [
-                          {
-                            header: '☘️ قـسـم الـنـظـام',
-                            title: '.النظام_كود',
-                            description: '',
-                            id: 'te'
-                          },
-                          {
-                            header: '👑 قـسـم الـمـطـور',
-                            title: '.المطور_كود',
-                            description: '',
-                            id: 'te'
-                          }
-                        ]
-                      }
-                    ]
-                  }),
-                  messageParamsJson: ''
-                }
-              ]
-            }
-          }
-        }
-      }
-    }, {})
-
-}
-
-handler.help = ['info']
-handler.tags = ['main']
-handler.command = ['القائمة']
-
-export default handlerbreak;
+let handler = async (m, { conn, usedPrefix, command}) => {
+      let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
+      if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`;
+    
+      let pp = './Assets/Gurulogo.jpg'
+      let more = String.fromCharCode(8206);
+      let readMore = more.repeat(850); 
+    
+      let lkr;
+      switch (command) {
+        case 'list':
+lkr = "*Get ready for the ride, here are your ticket options:*\n\n" +
+"🤖 *" + usedPrefix + "botmenu* - The Bot's secret control panel. What's your command, oh great one?\n\n" +
+"👑 *" + usedPrefix + "ownermenu* - The sacred scroll only for the chosen one. Yep, that's you, Boss!\n\n" +
+"🧑‍🤝‍🧑 *" + usedPrefix + "groupmenu* - Group shenanigans central! Unite, chat, conquer!\n\n" +
+"📥 *" + usedPrefix + "dlmenu* - 'DL' stands for 'Delicious Loot'. Come grab your goodies!\n\n" +
+"🎉 *" + usedPrefix + "funmenu* - The bot's party hat. Games, jokes and instant ROFLs. Let's get this party started!\n\n" +
+"💰 *" + usedPrefix + "economymenu* - Bling bling! Your personal vault of virtual economy. Spend or save? Choose wisely!\n\n" +
+"🎮 *" + usedPrefix + "gamemenu* - Enter the gaming arena. May the odds be ever in your favor!\n\n" +
+"🎨 *" + usedPrefix + "stickermenu* - A rainbow of stickers for your inner artist. Make your chats pop!\n\n" +
+"🧰 *" + usedPrefix + "toolmenu* - Your handy-dandy toolkit. What's your pick, genius?\n\n" +
+"🎩 *" + usedPrefix + "logomenu* - Create a logo that screams YOU. Or whispers. You choose the volume.\n\n" +
+"🌙 *" + usedPrefix + "nsfwmenu* - The After Dark menu. But remember, sharing adult secrets must be consent-based.";
+break;
 
           
         
