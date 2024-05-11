@@ -813,7 +813,7 @@ export async function presenceUpdate(presenceUpdate) {
 dfail
  */
 global.dfail = (type, m, conn) => {
-    const userTag = `👋 مرحبا *@${m.sender.split("@")[0]}*, `
+    const userTag = ` مرحبا 👋*@${m.sender.split("@")[0]}*, `
     const emoji = {
         general: '⚙️',
         owner: '👑',
@@ -830,19 +830,19 @@ global.dfail = (type, m, conn) => {
     }
 
     const msg = {
-        owner: `*${emoji.owner} Owner's Query*\n
+        owner: `*${emoji.owner} المطور فقط*\n
     ${userTag} *هذا الامر يمكن ان يستخدم بواسطة صاحب البوت فقط *!`,
-        moderator: `*${emoji.moderator} Moderator's Query*\n
+        moderator: `*${emoji.moderator} مشرفين بس *\n
     ${userTag} *هذا الامر يمكن ان يستخدم بواسطة المشرفين فقط*!`,
-        premium: `*${emoji.premium} Premium Query*\n
+        premium: `*${emoji.premium} العضو المميز فقط*\n
     ${userTag} *هذا الامر يمكن ان يستخدم بواسطة الاعضاء المميزين فقط*!`,
-        group: `*${emoji.group} Group Query*\n
+        group: `*${emoji.group} قروبات بس*\n
     ${userTag} *الامر ده بالقروبات بس يا صاحبي*!`,
-        private: `*${emoji.private} Private Query*\n
+        private: `*${emoji.private} خاص بس*\n
     ${userTag} *الامر ده بيشتغل في الخاص بس*!`,
-        admin: `*${emoji.admin} Admin's Query*\n
+        admin: `*${emoji.admin} مشرفين بس*\n
     ${userTag} *الامر ده للمشرفين بس*!`,
-        botAdmin: `*${emoji.botAdmin} Bot Admin's Query*\n
+        botAdmin: `*${emoji.botAdmin} لازم البوت يكون ادمن*\n
     ${userTag} *خلي البوت ادمن الاول يسطا*!`,
         unreg: `*${emoji.unreg} Registration Query*\n
     ${userTag} Please register to use this feature by typing:\n\n*#register name.age*\n\nExample: *#register ${m.name}.18*!`,
